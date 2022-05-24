@@ -1,0 +1,25 @@
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 40px 80px;
+}
+
+
+/* make products responsive */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .logo-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .logo-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+        padding: 20px 0px;
+    }
+}
