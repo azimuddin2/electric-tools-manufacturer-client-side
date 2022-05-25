@@ -19,6 +19,3 @@ function App() {
 }
 
 export default App;
-
-
-// https://github.com/programming-hero-web-course1/manufacturer-website-client-side-azimuddin2
