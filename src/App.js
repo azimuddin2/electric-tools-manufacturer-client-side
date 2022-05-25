@@ -8,7 +8,6 @@ import Navbar from './Pages/Shared/Navbar';
 function App() {
   return (
     <div>
-      <Footer></Footer>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -20,3 +19,6 @@ function App() {
 }
 
 export default App;
+
+
+// https://github.com/programming-hero-web-course1/manufacturer-website-client-side-azimuddin2
