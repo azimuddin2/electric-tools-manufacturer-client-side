@@ -1,10 +1,14 @@
 .button{
-    background-color: #fabc09;
+    background-color: #ff9800;
     border: none;
-    padding: 8px 30px;
+    padding: 8px 26px;
     border-radius: 5px;
     color: white;
     font-weight: 500;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .button:hover{

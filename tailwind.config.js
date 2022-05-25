@@ -7,9 +7,9 @@ module.exports = {
     themes: [
       {
         electrictoolstheme: {
-          primary: "#fabc09",
-          secondary: "#f6d860",
-          accent: "#37cdbe",
+          primary: "black",
+          secondary: "#1e2b47",
+          accent: "#19223c",
           neutral: "#3d4451",
           "base-100": "#ffffff",
         },
