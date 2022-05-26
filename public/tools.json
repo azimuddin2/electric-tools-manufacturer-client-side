@@ -1,0 +1,182 @@
+[
+  {
+    "_id": 1,
+    "name": "Bent Nose",
+    "img": "https://i.ibb.co/5jZ4NjR/bent-nose.png",
+    "description": "Bent nose pliers are ideal for hard to reach places, they can also be used for opening and closing jump rings and shaping wire.",
+    "price": " $170",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 2,
+    "name": "Cleaning",
+    "img": "https://i.ibb.co/ZKLTH8g/cleaning.webp",
+    "description": " A variety of accurate and specific tools and products created and designed in various colors sizes and styles to clean easily.",
+    "price": " $200",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.9"
+  },
+  {
+    "_id": 3,
+    "name": "Interchange Screwdriver",
+    "img": "https://i.ibb.co/qjKp7Yp/screwdriver-interchangeable.webp",
+    "description": "An electric Interchange screwdriver is a portable electric device that allows you to screw and unscrew effortlessly.",
+    "price": "$150",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 4,
+    "name": "Hammer",
+    "img": "https://i.ibb.co/3BYxxpZ/hammer.webp",
+    "description": "An electric hammer is a tool commonly used to drive nails, and other fasteners, into materials, such as wood and plaster.",
+    "price": "$180",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 5,
+    "name": "Hand Saw",
+    "img": "https://i.ibb.co/CztJdvN/hand-saw.webp",
+    "description": "In woodworking and carpentry, hand saws, This is usually done in order to join the pieces together and carve a wooden object.",
+    "price": "$190",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 6,
+    "name": "Heat Gun",
+    "img": "https://i.ibb.co/YN8T0ny/Heat-Gun.webp",
+    "description": "Heat guns are commonly known for their use to strip paint and weld or bend plastics. However, than just plastic welding tools.",
+    "price": "$250",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.0"
+  },
+  {
+    "_id": 7,
+    "name": "Mechanic",
+    "img": "https://i.ibb.co/pxzNP0j/mechanic-v1.webp",
+    "description": "They repair, replace, clean, and lubricate the parts. They then reassemble and test the tools to make sure they are operating.",
+    "price": "$170",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 8,
+    "name": "Metal Tools",
+    "img": "https://i.ibb.co/TcF07Mc/Metal-Tools.webp",
+    "description": "Power tools are classified as either stationary or portable, where means hand-held. Portable power tools have obvious in mobility.",
+    "price": "$300",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.0"
+  },
+  {
+    "_id": 9,
+    "name": "Metal Work",
+    "img": "https://i.ibb.co/FY9sLdh/metal-work-tool.webp",
+    "description": "Materials used for metalworking include ferrous and non-ferrous metals such as steel, gold, silver, bronze, iron, and more",
+    "price": "$170",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": " 4.5"
+  },
+  {
+    "_id": 10,
+    "name": "Mitre Saw",
+    "img": "https://i.ibb.co/WymnPFh/Mitre-Saw.webp",
+    "description": "Whereas chop saws are rugged and relatively simple tools, mitre saws are designed and manufactured cuts at many different angles.",
+    "price": "$399",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.9"
+  },
+  {
+    "_id": 11,
+    "name": "Pliers",
+    "img": "https://i.ibb.co/Y3tVpw5/pliers.webp",
+    "description": "Electrical pliers allow electricians to strip away a wire's plastic insulation and and electrical connections expose bare metal wire.",
+    "price": "$220",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 12,
+    "name": "SDS Drills",
+    "img": "https://i.ibb.co/PwnCjm2/SDS-Drills.webp",
+    "description": "SDS drills are an ideal tool for heavy duty jobs where fast and efficient drilling is needed.trigger switch is available.",
+    "price": "$259",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 13,
+    "name": "Tape Measure",
+    "img": "https://i.ibb.co/7vb1FRX/tape-measure.webp",
+    "description": "A measuring tape is a flexible tool used for measuring length.cloth, metal ribbon, It is a kind of also known as a tape measure.",
+    "price": "$179",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 14,
+    "name": "Screwdriver Hand",
+    "img": "https://i.ibb.co/M1qLYn6/screwdriver-hand.webp",
+    "description": "Screwdrivers, also known as turn screws, are hand-held, manually-powered implements designed for the tightening of screws.",
+    "price": "$299",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.5"
+  },
+  {
+    "_id": 15,
+    "name": "Compressor",
+    "img": "https://i.ibb.co/fYgN2Jv/Compressor.webp",
+    "description": "Air compressor power tools, also called pneumatic tools, are generally faster, lighter and more powerful than traditional power tools.",
+    "price": "$219",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.9"
+  },
+  {
+    "_id": 16,
+    "name": "Sanders",
+    "img": "https://i.ibb.co/8cnxXBZ/Sanders.webp",
+    "description": "sander, portable power tool used for smoothing, polishing, or cleaning a surface, as of wood, plastic, or metal the orbital sander.",
+    "price": "$349",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 17,
+    "name": "Roof Tool",
+    "img": "https://i.ibb.co/z6s9hJw/roof-tool.webp",
+    "description": "A roofing hammer is a must in every roofing professional's arsenal. This handy tool will have one dedicated solely to setting nails.",
+    "price": "$269",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "5.0"
+  },
+  {
+    "_id": 18,
+    "name": "Riveter",
+    "img": "https://i.ibb.co/k2rNpMt/riveter.webp",
+    "description": "Rivet tools install rivets into materials to fasten them together. They include rivet guns, hand riveters, and other riveting tools.",
+    "price": "$269",
+    "minimumQuantity": 5,
+    "availableQuantity": 100,
+    "rating": "4.6"
+  }
+]

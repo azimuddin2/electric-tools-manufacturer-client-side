@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp';
-import ReviewProducts from './Pages/ReviewProducts/ReviewProducts';
+import ReviewTools from './Pages/ReviewTools/ReviewTools';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 
@@ -13,7 +13,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='reviews' element={<ReviewProducts></ReviewProducts>}></Route>
+        <Route path='reviews' element={<ReviewTools></ReviewTools>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
       </Routes>
