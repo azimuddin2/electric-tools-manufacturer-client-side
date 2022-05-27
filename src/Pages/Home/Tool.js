@@ -18,7 +18,7 @@ const Tool = ({ tool }) => {
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">{name}</h2>
-                    <p>Price: {price}</p>
+                    <p>Price: ${price}</p>
                     <p>{description}</p>
                     <p>Minimum Order Quantity: {minimumQuantity}</p>
                     <p>Available Order Quantity {availableQuantity}</p>

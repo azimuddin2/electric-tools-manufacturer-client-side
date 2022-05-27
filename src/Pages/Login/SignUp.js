@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import googleIcon from '../../images/social/google.png';
 import Loading from '../Shared/Loading';
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -17,7 +18,7 @@ const SignUp = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     
-    // const [token] = useToken(user || googleUser);
+    const [token] = useToken(user || googleUser);
     
     const navigate = useNavigate();
 
@@ -31,7 +32,7 @@ const SignUp = () => {
         signInError = <p className='text-red-500'><small>{error?.message || googleError?.message || updateError?.message}</small></p>
     }
 
-    if (user || googleUser) {
+    if (token) {
         navigate('/');
     }
 

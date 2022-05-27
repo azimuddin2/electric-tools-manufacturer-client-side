@@ -18,7 +18,7 @@ const ToolDetail = () => {
                 <figure><img src={tool.img} alt="Shoes" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">{tool.name}</h2>
-                    <p>Price: {tool.price}</p>
+                    <p>Price: ${tool.price}</p>
                     <p>{tool.description}</p>
                     <p>Minimum Order Quantity: {tool.minimumQuantity}</p>
                     <p>Available Order Quantity {tool.availableQuantity}</p>
