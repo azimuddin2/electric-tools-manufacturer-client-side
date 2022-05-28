@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 
@@ -20,7 +20,7 @@ const MyOrders = () => {
             })
                 .then(res => {
                     console.log(res);
-                    if(res.status === 401 || res.status === 403){
+                    if (res.status === 401 || res.status === 403) {
                         signOut(auth);
                         localStorage.removeItem('accessToken');
                         navigate('/');
@@ -46,15 +46,25 @@ const MyOrders = () => {
                             <th>Name</th>
                             <th>Quantity</th>
                             <th>Price</th>
+                            <th>Payment</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            orders.map((order, index) => <tr>
+                            orders.map((order, index) => <tr key={order._id}>
                                 <th>{index + 1}</th>
                                 <td>{order.toolName}</td>
                                 <td>{order.orderQuantity}</td>
                                 <td>${order.toolPrice}</td>
+                                <td>
+                                    {(order.toolPrice && !order.paid) && <Link to={`/dashboard/payment/${order._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
+                                    {(order.toolPrice && order.paid) && <div>
+                                        <p><span className='text-success'>Paid</span> </p>
+                                        <p>Transaction id: <span className='text-success'>{order.transactionId}</span> </p>
+                                    </div>}
+
+                                </td>
+
                             </tr>)
                         }
                     </tbody>
