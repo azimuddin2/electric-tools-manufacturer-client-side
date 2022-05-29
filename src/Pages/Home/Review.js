@@ -7,7 +7,7 @@ const Review = () => {
         <section className='px-8 my-20'>
             <div className='flex justify-between mb-10'>
                 <div>
-                    <h3 className='text-secondary font-bold text-base'>Review</h3>
+                    <h3 className='text-secondary font-bold text-cyan-500 text-xl'>Review</h3>
                     <h1 className='font-mediums text-4xl capitalize'>Our Clients Say About Us</h1>
                 </div>
                 <div>
@@ -15,7 +15,7 @@ const Review = () => {
                 </div>
             </div>
             <div>
-               <ReviewCol></ReviewCol>
+                <ReviewCol></ReviewCol>
             </div>
         </section>
     );
