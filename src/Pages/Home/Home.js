@@ -3,7 +3,8 @@ import Banner from './Banner';
 import BusinessSection from './BusinessSection';
 import CompanyLogo from './CompanyLogo';
 import Contact from './Contact';
-import Testimonials from './Testimonials';
+import Review from './Review';
+
 import Tools from './Tools';
 
 const Home = () => {
@@ -13,8 +14,8 @@ const Home = () => {
             <CompanyLogo></CompanyLogo>
             <Tools></Tools>
             <BusinessSection></BusinessSection>
+            <Review></Review>
             <Contact></Contact>
-            <Testimonials></Testimonials>
         </div>
     );
 };

@@ -1,46 +1,46 @@
-import { faThumbsUp, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faSackDollar, faScrewdriverWrench, faThumbsUp, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import backgroundWhite from '../../images/bg-white.jpg';
+import backgroundWhite from '../../images/ban1.jpg';
+import './BusinessSection.css'
 
 const BusinessSection = () => {
     return (
         <section style={{
-            background: `url(${backgroundWhite})`,
-            Width: '100%', backgroundSize: '100%', backgroundPosition: '100%', backgroundRepeat: 'no-repeat'
+            background: `url(${backgroundWhite})`, backgroundRepeat: '100%', backgroundPosition: '100%'
         }}
-            className='px-8 py-12 sm:h-full'>
+            className='px-8 py-12 background-image'>
             <div>
-                <h1 className='text-center'>Millions of businesses trust us</h1>
-                <h3 className='text-center'>try to understand users expectation</h3>
+                <h1 className='text-center text-cyan-500 uppercase text-4xl font-bold'>Millions of Clients trust us</h1>
+                <h3 className='text-center capitalize text-white text-2xl mb-12'>try to understand Customer expectation</h3>
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                 <div class="stats shadow">
                     <div class="stat text-center">
-                        <div class="stat-title">Total Page Views</div>
-                        <div class="stat-value">89,400</div>
-                        <div class="stat-desc">21% more than last month</div>
+                        <div><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faScrewdriverWrench}></FontAwesomeIcon> </div>
+                        <div class="stat-value">200k</div>
+                        <div class="text-1xl text-cyan-500 font-medium">Tools</div>
                     </div>
                 </div>
                 <div class="stats shadow">
                     <div class="stat text-center">
-                        <div class="stat-title">Total Page Views</div>
-                        <div class="stat-value">89,400</div>
-                        <div class="stat-desc">21% more than last month</div>
+                        <div class="stat-title"><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faSackDollar}></FontAwesomeIcon></div>
+                        <div class="stat-value">200M</div>
+                        <div class="text-1xl text-cyan-500 font-medium">Annual Revenue</div>
                     </div>
                 </div>
                 <div class="stats shadow">
                     <div class="stat text-center">
-                        <div class="stat-title"> <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon> </div>
-                        <div class="stat-value">89,400</div>
-                        <div class="stat-desc">21% more than last month</div>
+                        <div> <FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faUsers}></FontAwesomeIcon> </div>
+                        <div class="stat-value">120k</div>
+                        <div class="text-1xl text-cyan-500 font-medium"> Customers</div>
                     </div>
                 </div>
                 <div class="stats shadow">
                     <div class="stat text-center">
-                        <div class="stat-title"><FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon> </div>
-                        <div class="stat-value">89,400</div>
-                        <div class="stat-desc">21% more than last month</div>
+                        <div><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faThumbsUp}></FontAwesomeIcon> </div>
+                        <div class="stat-value">44k</div>
+                        <div class="text-1xl text-cyan-500 font-medium">Feedbacks</div>
                     </div>
                 </div>
             </div>
