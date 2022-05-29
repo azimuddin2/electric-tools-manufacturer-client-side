@@ -7,6 +7,7 @@ import auth from '../../firebase.init';
 const AddProduct = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const [user] = useAuthState(auth);
+    console.log(user)
 
     const onSubmit = async data => {
         // console.log(data)
