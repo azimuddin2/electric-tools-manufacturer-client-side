@@ -4,6 +4,7 @@ import { useQuery } from 'react-query';
 import ReactStars from 'react-rating-stars-component';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import people from '../../images/people1.png';
 
 const ReviewCol = () => {
     const [user, loading, error] = useAuthState(auth);
@@ -44,7 +45,7 @@ const ReviewCol = () => {
                                 <div className='flex items-center mt-5'>
                                     <div className="avatar">
                                         <div className="w-20 mr-4 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                            <img src={user.photoURL} alt='' />
+                                            <img src={people} alt='' />
                                         </div>
                                     </div>
                                     <div>
