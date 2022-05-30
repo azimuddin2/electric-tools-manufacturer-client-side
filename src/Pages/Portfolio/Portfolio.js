@@ -1,9 +1,12 @@
 import React from 'react';
+import DeveloperSkills from './DeveloperSkills';
+import PortfolioBanner from './PortfolioBanner';
 
 const Portfolio = () => {
     return (
         <div>
-            <h1>This my personal Information</h1>
+            <PortfolioBanner></PortfolioBanner>
+            <DeveloperSkills></DeveloperSkills>
         </div>
     );
 };
