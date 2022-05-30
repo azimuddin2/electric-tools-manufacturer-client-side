@@ -6,7 +6,7 @@ import OrderForm from './OrderForm';
 
 const ToolDetail = () => {
     const { toolId } = useParams();
-    const { data: tool, isLoading } = useQuery('tool', () => fetch(`http://localhost:5000/tool/${toolId}`)
+    const { data: tool, isLoading } = useQuery('tool', () => fetch(`https://sheltered-plateau-99075.herokuapp.com/tool/${toolId}`)
         .then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>

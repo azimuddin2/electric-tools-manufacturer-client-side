@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 import Tool from './Tool';
 
 const Tools = () => {
-    const { data: tools, isLoading } = useQuery('tools', () => fetch('http://localhost:5000/tool')
+    const { data: tools, isLoading } = useQuery('tools', () => fetch('https://sheltered-plateau-99075.herokuapp.com/tool')
         .then(res => res.json()))
     if (isLoading) {
         return <Loading></Loading>

@@ -27,7 +27,7 @@ const AddReview = () => {
     const handleReview = data => {
         const reviewData = { ...data, rating: value };
         console.log(reviewData);
-        fetch('http://localhost:5000/review', {
+        fetch('https://sheltered-plateau-99075.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

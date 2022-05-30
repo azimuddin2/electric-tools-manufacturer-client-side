@@ -5,7 +5,7 @@ const ReviewTools = () => {
     const [tools, setTools] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/tool')
+        fetch('https://sheltered-plateau-99075.herokuapp.com/tool')
             .then(res => res.json())
             .then(data => setTools(data))
     }, [])

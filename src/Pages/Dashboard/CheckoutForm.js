@@ -15,7 +15,7 @@ const CheckoutForm = ({order}) => {
     useEffect(() => {
        if(toolPrice){
            console.log(toolPrice);
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://sheltered-plateau-99075.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -83,7 +83,7 @@ const CheckoutForm = ({order}) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`http://localhost:5000/order/${_id}`, {
+            fetch(`https://sheltered-plateau-99075.herokuapp.com/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

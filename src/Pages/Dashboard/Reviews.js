@@ -12,7 +12,7 @@ const Reviews = () => {
     const [user, loading, error] = useAuthState(auth);
 
     const { data: reviews, isLoading, refetch } = useQuery('review', () =>
-        fetch('http://localhost:5000/review', {
+        fetch('https://sheltered-plateau-99075.herokuapp.com/review', {
             method: "GET",
             headers: {
                 'content-type': 'application/json',

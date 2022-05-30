@@ -10,7 +10,7 @@ const MyProfile = () => {
 
     const handleProfile = data => {
         console.log(data)
-        fetch('http://localhost:5000/profile', {
+        fetch('https://sheltered-plateau-99075.herokuapp.com/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

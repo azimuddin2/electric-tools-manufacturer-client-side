@@ -11,7 +11,7 @@ const AddProduct = () => {
 
     const onSubmit = async data => {
         // console.log(data)
-        fetch('http://localhost:5000/tool', {
+        fetch('https://sheltered-plateau-99075.herokuapp.com/tool', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
