@@ -33,10 +33,11 @@ const AddProduct = () => {
     };
 
     return (
-        <div>
-            <h1>Add a New Product</h1>
+        <div className=''>
+            <h1 className='text-center font-medium text-cyan-500 text-2xl mt-4 mb-2'>Add a New Product</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-control w-full max-w-xs">
+                <div className='card shadow-xl w-96 mx-auto'>
+                <div className="form-control w-full max-w-xs mx-auto mt-4 mb-5">
                     <input disabled value={user?.email}
                         {...register("email")}
                         type="email"
@@ -46,7 +47,7 @@ const AddProduct = () => {
                 </div>
 
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <input
                         {...register("name")}
                         type="text"
@@ -56,7 +57,7 @@ const AddProduct = () => {
                 </div>
 
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <input
                         type="availableQuantity"
                         placeholder="Available Quantity"
@@ -79,7 +80,7 @@ const AddProduct = () => {
                 </div>
 
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <input
                         type="minimumQuantity"
                         placeholder="Minimum Quantity"
@@ -101,7 +102,7 @@ const AddProduct = () => {
                     </label>
                 </div>
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <input
                         {...register("img")}
                         type="url"
@@ -110,7 +111,7 @@ const AddProduct = () => {
                     />
                 </div>
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <input
                         {...register("price")}
                         type="number"
@@ -119,13 +120,14 @@ const AddProduct = () => {
                     />
                 </div>
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mb-4 mx-auto">
                     <textarea
                         {...register("description")}
                         name="description" className="input input-bordered w-full max-w-xs" placeholder='Product Description' id="" cols="30" rows="10"></textarea>
                 </div>
 
-                <input className='btn btn-secondary text-white w-full max-w-xs' type="submit" value="Add" />
+                <input className='btn btn-secondary text-white w-full max-w-xs mb-10 mx-auto' type="submit" value="Add" />
+                </div>
             </form>
         </div>
     );

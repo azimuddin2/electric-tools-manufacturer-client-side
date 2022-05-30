@@ -24,7 +24,6 @@ const Navbar = () => {
         <li><Link to="/portfolio">Portfolio</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
         <li><Link to="/review">Review</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
@@ -36,12 +35,6 @@ const Navbar = () => {
         <li>
             <Link to='/profile'><FontAwesomeIcon className='text-2xl' icon={faCircleUser}></FontAwesomeIcon>
             </Link>
-        </li>
-        <li>
-            <div className="indicator">
-                <span className="indicator-item badge bg-orange-300 text-white mt-3 mr-3 text-xs">0</span>
-                <FontAwesomeIcon className='text-xl' icon={faCartShopping}></FontAwesomeIcon>
-            </div>
         </li>
     </>
 

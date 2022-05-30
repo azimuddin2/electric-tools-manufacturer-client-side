@@ -40,11 +40,11 @@ const MyProfile = () => {
         <div>
             <div className="hero-content flex-col lg:flex-col-reverse">
 
-                <div className="card   max-w-sm shadow-2xl bg-base-500">
+                <div className="card shadow-xl">
 
-                    <div className="card-body w-80">
+                    <div className="card-body w-96">
                         <div>
-                            <h2 className='text-2xl text-center'>Add a Review</h2>
+                            <h2 className='text-center font-medium text-2xl mb-4 text-cyan-500'>Update Your Profile</h2>
                         </div>
                         <form onSubmit={handleSubmit(handleProfile)}>
 

@@ -13,8 +13,8 @@ const ToolDetail = () => {
     }
 
     return (
-        <div className='py-20 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5'>
-            <div className="card lg:max-w-lg bg-base-100 shadow-xl">
+        <div className='py-20 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 px-8'>
+            <div className="card shadow-xl">
                 <figure><img src={tool.img} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{tool.name}</h2>
@@ -28,7 +28,7 @@ const ToolDetail = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='card shadow-xl'>
                 {
                     <OrderForm
                         key={tool._id}

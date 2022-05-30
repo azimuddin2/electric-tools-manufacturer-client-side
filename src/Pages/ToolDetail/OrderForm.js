@@ -38,37 +38,37 @@ const OrderForm = ({ tool }) => {
 
     return (
         <div className='flex my-12 justify-center'>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className=" w-96">
                 <div className="card-body">
-                    <h2 className="text-center font-medium text-2xl">Please Order</h2>
+                    <h2 className="text-center font-medium text-cyan-500 text-3xl mb-2">Please Order</h2>
                     <form onSubmit={handleOrder}>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type="text" name='name'
                                 disabled value={user?.displayName || ''}
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type="email" name='email'
                                 disabled value={user?.email || ''}
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type="text" name='address' placeholder="Address"
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type="text" name='phone' placeholder="Phone Number"
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type="text" name='tool' value={name} disabled
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-5">
                             <input type='text' name='price' value={price}
                                 className="input input-bordered w-full max-w-xs" />
                         </div>
-                        <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs mb-3">
                             <input onChange={(event) => setCheck(event.target.value)}
                                 type="number" name='quantity'
                                 placeholder='Order Quantity'
