@@ -22,6 +22,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Blogs from './Pages/Blogs/Blogs';
 import AddReview from './Pages/Dashboard/AddReview';
 import Reviews from './Pages/Dashboard/Reviews';
+import ViewProfile from './Pages/Dashboard/ViewProfile';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='reviews' element={<ReviewTools></ReviewTools>}></Route>
         <Route path='/tool/:toolId' element={<RequireAuth><ToolDetail></ToolDetail></RequireAuth>}></Route>
         <Route path='portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='profile/:email' element={<ViewProfile></ViewProfile>}></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='review' element={<Reviews></Reviews>}></Route>
         <Route path='dashboard' element={
@@ -43,7 +45,6 @@ function App() {
           <Route path='orders' element={<MyOrders></MyOrders>}></Route>
           <Route path='review' element={<AddReview></AddReview>}></Route>
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
-
           <Route path='users' element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           <Route path='addProduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
           <Route path='manageProducts' element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>

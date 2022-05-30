@@ -13,6 +13,8 @@ const CheckoutForm = ({order}) => {
     const { _id, toolPrice, toolName, customerName, customerEmail, customerPhone } = order;
 
     useEffect(() => {
+       if(toolPrice){
+           console.log(toolPrice);
         fetch('http://localhost:5000/create-payment-intent', {
             method: 'POST',
             headers: {
@@ -27,6 +29,7 @@ const CheckoutForm = ({order}) => {
                     setClientSecret(data.clientSecret);
                 }
             });
+       }
 
     }, [toolPrice])
 

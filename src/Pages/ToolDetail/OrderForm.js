@@ -75,11 +75,11 @@ const OrderForm = ({ tool }) => {
                                 className="input input-bordered w-full max-w-xs"
                             />
                             {
-                                check < tool?.minimumQuantity && <span className="label-text-alt text-red-500">Minimum Quantity{tool.minimumQuantity}</span>
+                                check < tool?.minimumQuantity && <span className="label-text-alt text-red-500 text-sm text-center"> Minimum Order Quantity/ 0{tool.minimumQuantity}</span>
                             }
 
                             {
-                                check > tool?.availableQuantity && <span className="label-text-alt text-red-500">Available Quantity{tool.availableQuantity}</span>
+                                check > tool?.availableQuantity && <span className="label-text-alt text-red-600 text-sm text-center">Available Order Quantity/ {tool.availableQuantity}</span>
 
                             }
                         </div>

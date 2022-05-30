@@ -73,7 +73,7 @@
     "_id": 8,
     "name": "Metal Tools",
     "img": "https://i.ibb.co/TcF07Mc/Metal-Tools.webp",
-    "description": "Power tools are classified as either stationary or portable, where means hand-held. Portable power tools have obvious in mobility.",
+    "description": "Power tools are classNameified as either stationary or portable, where means hand-held. Portable power tools have obvious in mobility.",
     "price": 300,
     "minimumQuantity": 5,
     "availableQuantity": 100,

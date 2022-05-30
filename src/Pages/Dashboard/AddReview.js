@@ -49,21 +49,21 @@ const AddReview = () => {
 
     return (
         <div>
-            <div class="hero-content flex-col lg:flex-col-reverse">
+            <div className="hero-content flex-col lg:flex-col-reverse">
 
-                <div class="card   max-w-sm shadow-2xl bg-base-500">
+                <div className="card   max-w-sm shadow-2xl bg-base-500">
 
-                    <div class="card-body w-80">
+                    <div className="card-body w-80">
                         <div>
                             <h2 className='text-2xl text-center'>Add a Review</h2>
                         </div>
                         <form onSubmit={handleSubmit(handleReview)}>
 
-                            <div class="form-control w-full max-w-xs">
+                            <div className="form-control w-full max-w-xs">
                                 <input
                                     type="email"
                                     value={user?.email}
-                                    class="input input-bordered w-full max-w-xs"
+                                    className="input input-bordered w-full max-w-xs"
                                     {...register("email", {
                                         required: {
                                             value: true,
@@ -76,16 +76,16 @@ const AddReview = () => {
                                     })}
                                 />
 
-                                <label class="label">
-                                    {errors.email?.type === 'required' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
-                                    {errors.email?.type === 'pattern' && <span class="label-text-alt text-red-500">{errors.email.message}</span>}
+                                <label className="label">
+                                    {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                    {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
                                 </label>
                             </div>
-                            <div class="form-control w-full max-w-xs">
+                            <div className="form-control w-full max-w-xs">
                                 <input
                                     type="text"
                                     value={user?.displayName}
-                                    class="input input-bordered w-full max-w-xs"
+                                    className="input input-bordered w-full max-w-xs"
                                     {...register("name", {
                                         required: {
                                             value: true,
@@ -93,19 +93,19 @@ const AddReview = () => {
                                         }
                                     })}
                                 />
-                                <label class="label">
-                                    {errors.name?.type === 'required' && <span class="label-text-alt text-red-500">{errors.name.message}</span>}
+                                <label className="label">
+                                    {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                                 </label>
                             </div>
 
                             
 
 
-                            <div class="form-control w-full max-w-xs">
+                            <div className="form-control w-full max-w-xs">
                                 <textarea
                                     placeholder='Product Description'
                                     type="text"
-                                    class="input input-bordered w-full max-w-xs"
+                                    className="input input-bordered w-full max-w-xs"
                                     {...register("description", {
                                         required: {
                                             value: true,
@@ -116,9 +116,9 @@ const AddReview = () => {
                                     })}
                                 />
 
-                                <label class="label">
-                                    {errors.description?.type === 'required' && <span class="label-text-alt text-red-500">{errors.description.message}</span>}
-                                    {errors.description?.type === 'pattern' && <span class="label-text-alt text-red-500">{errors.description.message}</span>}
+                                <label className="label">
+                                    {errors.description?.type === 'required' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
+                                    {errors.description?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
                                 </label>
                             </div>
                             <p>Please Rating :</p>

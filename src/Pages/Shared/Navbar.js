@@ -9,7 +9,7 @@ import logo from '../../images/logo2.png'
 import Loading from './Loading';
 
 const Navbar = () => {
-    const [user, loading] = useAuthState(auth);
+    const [ user, loading] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
         localStorage.removeItem('accessToken');
@@ -33,24 +33,16 @@ const Navbar = () => {
                 user ? <Link onClick={logout} to="/signup">SignOut</Link> : <Link to="/login">Login</Link>
             }
         </li>
-
-
-
-        {/* <li>
-            <div class="dropdown dropdown-end">
-                <label tabindex="0" class=""><FontAwesomeIcon className='text-4xl' icon={faCircleUser}></FontAwesomeIcon></label>
-                <ul tabindex="0" class="lg:mt-40 mt-36 ml-40 text-primary dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>View Profile</a></li>
-                    <li><a>Item 2</a></li>
-                </ul>
-            </div>
+        <li>
+            <Link to='/profile'><FontAwesomeIcon className='text-2xl' icon={faCircleUser}></FontAwesomeIcon>
+            </Link>
         </li>
         <li>
-            <div class="indicator">
-                <span class="indicator-item badge bg-orange-300 text-white mt-4">99+</span>
-                <FontAwesomeIcon className='text-2xl' icon={faCartShopping}></FontAwesomeIcon>
+            <div className="indicator">
+                <span className="indicator-item badge bg-orange-300 text-white mt-3 mr-3 text-xs">0</span>
+                <FontAwesomeIcon className='text-xl' icon={faCartShopping}></FontAwesomeIcon>
             </div>
-        </li> */}
+        </li>
     </>
 
     return (
@@ -75,7 +67,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
+                    <label tabIndex="1" htmlFor="dashboard-sidebar" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                 </div>

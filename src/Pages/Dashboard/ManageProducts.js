@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
+import DeleteConfirmModal from '../Shared/DeleteConfirmModal';
 import Loading from '../Shared/Loading';
 import ProductRow from './ProductRow';
 
 const ManageProducts = () => {
-    // const [deletingDoctor, setDeletingDoctor] = useState(null);
+    const [deletingProduct, setDeletingProduct] = useState(null);
     const { data: tools, isLoading, refetch } = useQuery('tools', () => fetch('http://localhost:5000/tool', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -18,15 +19,14 @@ const ManageProducts = () => {
     return (
         <div>
             <h1>Manage Products: {tools.length}</h1>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>
                             <th>Avatar</th>
                             <th>Name</th>
                             <th>Price</th>
-                            {/* <th>Description</th> */}
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -37,12 +37,19 @@ const ManageProducts = () => {
                                 tool={tool}
                                 index={index}
                                 refetch={refetch}
-                                // setDeletingDoctor={setDeletingDoctor}
+                                setDeletingProduct={setDeletingProduct}
                             ></ProductRow>)
                         }
                     </tbody>
                 </table>
             </div>
+            {
+                deletingProduct && <DeleteConfirmModal
+                deletingProduct={deletingProduct}
+                refetch={refetch}
+                setDeletingProduct={setDeletingProduct}
+                ></DeleteConfirmModal>
+            }
         </div>
     );
 };

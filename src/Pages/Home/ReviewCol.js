@@ -36,10 +36,10 @@ const ReviewCol = () => {
 
     return (
         <div>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
-                    reviewCollection.map(review =>
-                        <div className="card lg:max-w-lg bg-base-100 shadow-xl">
+                    reviewCollection.map(review => 
+                        <div key={review._id} className="card lg:max-w-lg bg-base-100 shadow-xl">
                             <div className="card-body">
                                 <p className='text-sm'>{review.description}</p>
                                 <div className='flex items-center mt-5'>

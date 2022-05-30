@@ -15,32 +15,32 @@ const BusinessSection = () => {
                 <h3 className='text-center capitalize text-white text-2xl mb-12'>try to understand Customer expectation</h3>
             </div>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
-                <div class="stats shadow">
-                    <div class="stat text-center">
+                <div className="stats shadow">
+                    <div className="stat text-center">
                         <div><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faScrewdriverWrench}></FontAwesomeIcon> </div>
-                        <div class="stat-value">200k</div>
-                        <div class="text-1xl text-cyan-500 font-medium">Tools</div>
+                        <div className="stat-value">200k</div>
+                        <div className="text-1xl text-cyan-500 font-medium">Tools</div>
                     </div>
                 </div>
-                <div class="stats shadow">
-                    <div class="stat text-center">
-                        <div class="stat-title"><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faSackDollar}></FontAwesomeIcon></div>
-                        <div class="stat-value">200M</div>
-                        <div class="text-1xl text-cyan-500 font-medium">Annual Revenue</div>
+                <div className="stats shadow">
+                    <div className="stat text-center">
+                        <div className="stat-title"><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faSackDollar}></FontAwesomeIcon></div>
+                        <div className="stat-value">200M</div>
+                        <div className="text-1xl text-cyan-500 font-medium">Annual Revenue</div>
                     </div>
                 </div>
-                <div class="stats shadow">
-                    <div class="stat text-center">
+                <div className="stats shadow">
+                    <div className="stat text-center">
                         <div> <FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faUsers}></FontAwesomeIcon> </div>
-                        <div class="stat-value">120k</div>
-                        <div class="text-1xl text-cyan-500 font-medium"> Customers</div>
+                        <div className="stat-value">120k</div>
+                        <div className="text-1xl text-cyan-500 font-medium"> Customers</div>
                     </div>
                 </div>
-                <div class="stats shadow">
-                    <div class="stat text-center">
+                <div className="stats shadow">
+                    <div className="stat text-center">
                         <div><FontAwesomeIcon className='text-cyan-500 text-6xl mb-2' icon={faThumbsUp}></FontAwesomeIcon> </div>
-                        <div class="stat-value">44k</div>
-                        <div class="text-1xl text-cyan-500 font-medium">Feedbacks</div>
+                        <div className="stat-value">44k</div>
+                        <div className="text-1xl text-cyan-500 font-medium">Feedbacks</div>
                     </div>
                 </div>
             </div>

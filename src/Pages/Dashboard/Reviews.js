@@ -48,7 +48,7 @@ const Reviews = () => {
                 </div>
             </div>
             <div>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {
                     reviews.map(review =>
                             <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -80,7 +80,7 @@ const Reviews = () => {
 
 
         // <div>
-        //     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        //     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         //         {
         //             reviews.map(review =>
         //                     <div className="card lg:max-w-lg bg-base-100 shadow-xl">

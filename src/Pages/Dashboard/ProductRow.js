@@ -1,31 +1,16 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const ProductRow = ({ tool, index, refetch }) => {
-    const { _id, name, img, description, price, minimumQuantity, availableQuantity } = tool;
+const ProductRow = ({ tool, index, refetch, setDeletingProduct }) => {
+    const { _id, name, img, price, minimumQuantity, availableQuantity } = tool;
 
-    const handleDelete = id => {
-        fetch(`http://localhost:5000/tool/${id}`, {
-            method: 'DELETE',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount) {
-                    toast.success(`Tool ${name} is Deleted.`)
-                    refetch()
-                }
-            })
-    }
 
     return (
         <tr>
             <th>{index + 1}</th>
             <td>
-                <div class="avatar">
-                    <div class="w-20 bg-gray-400 rounded-sm">
+                <div className="avatar">
+                    <div className="w-20 bg-gray-400 rounded-sm">
                         <img src={img} alt={name} />
                     </div>
                 </div>
@@ -34,7 +19,7 @@ const ProductRow = ({ tool, index, refetch }) => {
             <td>${price}</td>
             {/* <td>{description}</td> */}
             <td>
-                <label onClick={() => handleDelete(_id)} for="delete-confirm-modal" className="btn btn-error btn-sm text-white">Delete</label>
+            <label onClick={() => setDeletingProduct(tool)} htmlFor="delete-confirm-modal" className="btn btn-error btn-sm text-white">Delete</label>
             </td>
         </tr>
     );
